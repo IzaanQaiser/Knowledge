@@ -25,6 +25,7 @@
 3. Footnote - This sentence has a footnote. [^1]
 [^1] This is that sentences footnote.
 4. Heading ID - ### This heading has an id {#custom-id}
-5. Definition list - 
-term
-: definition of the term
+5. Strikethrough - ~~This text has a strikethrough.~~
+6. Task List - 
+- [x] this task is complete
+- [ ] this task is incomplete

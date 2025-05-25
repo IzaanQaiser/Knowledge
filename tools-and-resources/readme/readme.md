@@ -11,3 +11,15 @@
 10. Horizontal Rule - ---
 11. Link - [Link Title](hyperlink)
 12. Image - ![alt text](link to image)
+
+# Extended Syntax
+1. Table - | Syntax | Description |
+           | ----------- | ----------- |
+           | Header | Title |
+           | Paragraph | Text |
+2. Fenced Code Block - ``` { 
+    "firstname": "John",
+    "lastname": "Smith",
+    "age": 25
+}
+```

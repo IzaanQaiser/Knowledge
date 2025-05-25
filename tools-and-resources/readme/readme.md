@@ -21,5 +21,4 @@
     "firstname": "John",
     "lastname": "Smith",
     "age": 25
-}
-```
+} ```

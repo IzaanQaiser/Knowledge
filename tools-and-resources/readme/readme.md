@@ -1,3 +1,5 @@
+## EDIT TO SEE THE MARKDOWN SYNTAX
+
 # Basic Syntax
 1. Heading 1 - # This is a Header 1
 2. Heading 2 - ## This is a Header 2
@@ -30,4 +32,7 @@
 - [x] this task is complete
 - [ ] this task is incomplete
 7. Emoji - Added an emoji here: :joy:
+8. Highlight - ==This text is highlighted.==
+9. Subscript - There is ~text in here~ that is subscripted.
+10. Superscript - There is ~text in here~ that is superscripted.
 

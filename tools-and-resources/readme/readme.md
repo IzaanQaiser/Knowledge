@@ -1,4 +1,4 @@
-#Basic Syntax
+# Basic Syntax
 1. Heading 1 - # This is a Header 1
 2. Heading 2 - ## This is a Header 2
 3. Heading 3 - ### This is a Header 3

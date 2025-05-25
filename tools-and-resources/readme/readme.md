@@ -29,3 +29,5 @@
 6. Task List - 
 - [x] this task is complete
 - [ ] this task is incomplete
+7. Emoji - Added an emoji here: :joy:
+

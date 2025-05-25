@@ -1,3 +1,4 @@
+#Basic Syntax
 1. Heading 1 - # This is a Header 1
 2. Heading 2 - ## This is a Header 2
 3. Heading 3 - ### This is a Header 3
@@ -10,3 +11,4 @@
 10. Horizontal Rule - ---
 11. Link - [Link Title](hyperlink)
 12. Image - ![alt text](link to image)
+

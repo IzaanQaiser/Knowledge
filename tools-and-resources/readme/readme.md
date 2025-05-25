@@ -22,3 +22,8 @@
     "lastname": "Smith",
     "age": 25
 } ```
+3. Footnote - This sentence has a footnote. [^1]
+[^1] This is that sentences footnote.
+4. Heading ID - ### This heading has an ad {#custom-id}
+5. Definition list - term
+: definition of the tem

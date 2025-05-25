@@ -32,8 +32,4 @@
 - [x] this task is complete
 - [ ] this task is incomplete
 7. Emoji - Added an emoji here: :joy:
-8. Highlight - 
-==This text is highlighted.==
-9. Subscript - There is~text~that is subscripted.
-10. Superscript - There is^text^that is superscripted.
 

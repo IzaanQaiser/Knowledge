@@ -16,6 +16,7 @@
 - They support CI/CD pipelines
 - They provide clean histories for releases and rollbacks
 
+
 ## 1. Git Flow
 ### Main Branches:
 - `main` - Production-ready code
@@ -29,9 +30,9 @@
 
 ### Good for:
 - Larger teams, staged release processes
-
 ### Avoid if:
 - You deploy continuously (too much overhead)
+
 
 ## GitHub Flow (Ideal for CI/CD and Web Apps)
 ### Main Branches:
@@ -49,10 +50,28 @@
 
 ### Good For:
 - Startups, small teams, web apps, frequent deploys
-
 ### Avoid if:
 - You need to maintain multiple versions
 
+
 ## Trunk-Based Development
-## Main Branches:
-- `main` or `trunk` - 
+### Main Branches:
+- `main` or `trunk` - Single shared branch
+
+### Supporting Branches:
+- Temporary branches for small features (merged quickly or commited directly)
+
+### Good For:
+- High-velocity teams, real-time apps
+### Avoid if:
+- You work on long-lived features or large modules without feature flags
+
+
+## Best Practices:
+1. Keep branches short-lived to avoid stale code conflicts
+2. Use pull requests with reviews before merging
+3. **Automate tests on every PR**
+4. Keep `main` always deployable
+5. Use **clear branch names** for clarity
+6. Delete branches after merging
+7. Use feature flags for incomplete features on `main`

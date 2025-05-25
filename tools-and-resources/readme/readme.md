@@ -33,3 +33,4 @@
 - [ ] this task is incomplete
 7. Emoji - Added an emoji here: :joy:
 
+Note: I honestly could have just used chatGPT when I needed these things but good to know I guess.

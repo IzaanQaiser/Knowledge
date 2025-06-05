@@ -1,71 +1,58 @@
-✅ Yes, exactly. Here’s the full flow:
+Copy and paste the following exact comment into your workOrderSteps.tsx file — ideally near the button where you want Copilot to add the checker logic:
 
-⸻
+// Create a button that logs whether the interaction was a mouse click or a touch press.
+// Use a ref and add a pointerdown event listener inside useEffect.
+// When pointerType is 'mouse', log "Mouse Click detected".
+// When pointerType is 'touch', log "Touch Press detected".
+// Clean up the event listener on unmount.
+// Use TypeScript with proper typing.
 
-🔧 Step-by-Step:
-	1.	Create a new file, e.g.:
+That should prompt Copilot to generate the component correctly.
 
-src/components/InputDetector.jsx
+But if you want the full ready-to-use code to paste directly and skip guessing, here it is:
 
+import React, { useRef, useEffect } from "react";
 
-	2.	Paste the component (example using pointerdown):
-
-import React, { useEffect, useRef } from "react";
-
-const InputDetector = () => {
-  const ref = useRef(null);
+const InputTypeButton = () => {
+  const buttonRef = useRef<HTMLButtonElement>(null);
 
   useEffect(() => {
-    const handlePointerDown = (e) => {
-      alert(`Pointer Type: ${e.pointerType}`); // 'mouse', 'touch', or 'pen'
+    const handlePointerDown = (e: PointerEvent) => {
+      if (e.pointerType === "mouse") {
+        alert("Mouse Click detected");
+      } else if (e.pointerType === "touch") {
+        alert("Touch Press detected");
+      } else if (e.pointerType === "pen") {
+        alert("Pen Input detected");
+      }
     };
 
-    const el = ref.current;
-    el.addEventListener("pointerdown", handlePointerDown);
+    const btn = buttonRef.current;
+    if (btn) {
+      btn.addEventListener("pointerdown", handlePointerDown);
+    }
 
     return () => {
-      el.removeEventListener("pointerdown", handlePointerDown);
+      if (btn) {
+        btn.removeEventListener("pointerdown", handlePointerDown);
+      }
     };
   }, []);
 
   return (
-    <div
-      ref={ref}
-      style={{
-        padding: "2rem",
-        border: "2px solid white",
-        background: "#333",
-        color: "white",
-        borderRadius: "8px",
-        textAlign: "center",
-        userSelect: "none",
-        cursor: "pointer",
-      }}
+    <button
+      ref={buttonRef}
+      className="px-4 py-2 bg-blue-600 text-white rounded"
     >
-      Tap or Click me to test input type
-    </div>
+      Test Input Type
+    </button>
   );
 };
 
-export default InputDetector;
+export default InputTypeButton;
 
+Then just import and use it anywhere in workOrderSteps.tsx like:
 
-⸻
+<InputTypeButton />
 
-	3.	Import it into any screen, e.g. in a page or screen:
-
-import InputDetector from '../components/InputDetector';
-
-export default function HomeScreen() {
-  return (
-    <div>
-      <h1>Welcome</h1>
-      <InputDetector />
-    </div>
-  );
-}
-
-
-⸻
-
-Let me know if you want it to be a hook instead (useInputType) or if you want it to trigger different logic based on input (e.g. multi-select mode on long press).
+Let me know if you want it inline instead of separate!
